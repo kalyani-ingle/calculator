@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
 }
+
 body {
   display: flex;
   height: 100vh;
@@ -11,6 +12,7 @@ body {
   justify-content: center;
   background-color: #202020;
 }
+
 .container {
   position: relative;
   min-width: 300px;
@@ -21,6 +23,7 @@ body {
     10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.25),
     inset 5px 5px 15px rgba(0, 0, 0, 0.25);
 }
+
 .container span {
   color: #fff;
   position: relative;
@@ -38,9 +41,11 @@ body {
   font-weight: 400;
   border-radius: 10px;
 }
+
 .calculator span:active {
   filter: brightness(6);
 }
+
 .calculator span::before {
   content: "";
   position: absolute;
@@ -56,16 +61,19 @@ body {
   border-bottom: 1px solid #0004;
   border-top: 1px solid #0009;
 }
+
 .calculator span i {
   position: relative;
   font-style: normal;
   font-size: 1.5em;
   text-transform: uppercase;
 }
+
 .calculator {
   position: relative;
   display: grid;
 }
+
 .calculator .value {
   position: relative;
   grid-column: span 4;
@@ -82,24 +90,29 @@ body {
   padding: 10px;
   font-size: 2em;
 }
+
 .calculator .clear {
   grid-column: span 2;
   width: 180px;
   background: #f00;
 }
+
 .calculator .clear::before {
   background: linear-gradient(90deg, #d20000, #ffffff5c);
   border-left: 1px solid #fff4;
   border-bottom: 1px solid #fff4;
   border-top: 1px solid #fff4;
 }
+
 .calculator .plus {
   grid-row: span 2;
   height: 180px;
 }
+
 .calculator .equal {
   background: #2196f3;
 }
+
 .calculator .equal::before {
   background: linear-gradient(90deg, #1479c9, #ffffff5c);
   border-left: 1px solid #fff4;
